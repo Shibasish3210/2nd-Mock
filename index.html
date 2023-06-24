@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <nav>
+        <!-- Sticky Navbar -->
+        <div class="navbar">
+            <ul>
+                <li><a class="btn" href="#">Logout</a></li>
+                <li><a class="btn" href="#">Conatct Us</a></li>
+                <li><a class="btn" href="#form">Register</a></li>
+                <li><a class="btn" href="#table">Books</a></li>
+                <div id="name">Library Management System</div>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <!-- Table sectoion -->
+        <div class="table">
+            <table id="table">
+                <caption><h1>Books</h1></caption>
+                <thead>
+                    <th class="head">Book ID</th>
+                    <th class="head">Title</th>
+                    <th class="head">Author</th>
+                    <th class="head">Genre</th>
+                    <th class="head">Avavilability</th>
+                </thead>
+                <tbody>
+                    <!-- 1st row -->
+                    <tr class="row" id="row1">
+                        <td class="id">1</td>
+                        <td class="title">
+                            <a href="https://en.wikipedia.org/wiki/Pride_and_Prejudice" target="_blank">Pride and Prejudice</a>
+                            <dl>
+                                <dd>Publication date:28 January 1813</dd>
+                                <dt>Page Count: 452</dt>
+                                <dd>ISBN: 123-3215487548</dd>
+                            </dl>
+                        </td>
+                        <td class="auth">Jane Austen</td>
+                        <td class="genre">	Classic Regency Novel/Romance Novel</td>
+                        <td class="avail">Available</td>
+                    </tr>
+    
+                    <!-- 2nd row -->
+                    <tr class="row" id="row2">
+                        <td class="id">2</td>
+                        <td class="title">
+                            <a href="https://en.wikipedia.org/wiki/War_and_Peace" target="_blank">War and Peace</a>
+                            <dl>
+                                <dd>Publication date:1865–1867(Serialised)</dd>
+                                <dt>Page Count: 350/422/672</dt>
+                                <dd>ISBN: 123-3215487514</dd>
+                            </dl>
+                        </td>
+                        <td class="auth">Leo Tolstoy</td>
+                        <td class="genre">Historical Novel</td>
+                        <td class="avail">Not Available</td>
+                        
+                    </tr>
+                    
+                    <!-- 3rd row -->
+                    <tr class="row" id="row3">
+                        <td class="id">3</td>
+                        <td class="title">
+                            <a href="https://en.wikipedia.org/wiki/David_Copperfield" target="_blank">David Copperfield</a>
+                            <dl>
+                                <dd>Publication date: May 1849 – November 1850</dd>
+                                <dt>Page Count:456/368</dt>
+                                <dd>ISBN: 123-3215448962</dd>
+                            </dl>
+                        </td>
+                        <td class="auth">Charles Dickens</td>
+                        <td class="genre">Bildungsroman</td>
+                        <td class="avail">Available</td>
+                        
+                    </tr>
+    
+                    <!-- 4th row -->
+                    <tr class="row" id="row4">
+                        <td class="id">4</td>
+                        <td class="title">
+                            <a href="https://en.wikipedia.org/wiki/Wuthering_Heights" target="_blank">Wuthering Heights</a>
+                            <dl>
+                                <dd>Publication date:December 1847</dd>
+                                <dt>Page Count:536</dt>
+                                <dd>ISBN: 123-3215441254</dd>
+                            </dl>
+                        </td>
+                        <td class="auth">Emily Brontë</td>
+                        <td class="genre">Tragedy, gothic</td>
+                        <td class="avail">Not Available</td>
+                        
+                    </tr>
+                    <!-- 5th row -->
+                    <tr class="row" id="row5">
+                        <td class="id">5</td>
+                        <td class="title">
+                            <a href="https://en.wikipedia.org/wiki/The_Red_and_the_Black" target="_blank">The Red and the Black</a>
+                            <dl>
+                                <dd>Publication date:November 1830</dd>
+                                <dt>Page Count:689</dt>
+                                <dd>ISBN: 123-3215448148</dd>
+                            </dl>
+                        </td>
+                        <td class="auth">Stendhal (Henri Beyle)</td>
+                        <td class="genre">Bildungsroman</td>
+                        <td class="avail">Available</td>
+    
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <section>
+        <!-- Form section -->
+        <form action="#" method="post" class="form" id="form">
+            <h1>Register</h1>
+            <label for="fname">First name:</label>
+            <br>
+            <input type="text" id="fname" placeholder="Enter Your First Name" required>
+            <br>
+            <label for="lname">Last name:</label>
+            <br>
+            <input type="text"id="lname" placeholder="Enter Your Last Name" required>
+            <br>
+            <label for="dob">Date Of Birth:</label>
+            <br>
+            <input type="date" id="dob" required>
+            <br>
+            <label for="age">Age:</label>
+            <br>
+            <input type="number" id="age" min="5" max="100" placeholder="Enter Your Age" required>
+            <br>
+            <label for="email" >Email:</label>
+            <br>
+            <input type="email" id="email" placeholder="xyz@email.com" required>
+            <br>
+            <label for="pass">Password:</label>
+            <br>
+            <input type="password" id="pass" placeholder="Enter a Strong Password" required>
+            <br>
+            <label for="con-pass">Confirm Password:</label>
+            <br>
+            <input type="password" id="con-pass" placeholder="Please Repeat The Same Password" required>
+            <br>
+            <input type="submit" value="Register" id="submit">
+        </form>
+    </section>
+</body>
+</html>
